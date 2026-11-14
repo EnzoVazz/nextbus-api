@@ -1,0 +1,9 @@
+[
+  {"codigo": "34831", "letreiro": "7021-10", "sentido": "IDA", "nome": "Terminal Pirituba / Roberto Selmi Dei", "paradas": ["140088210", "140015892"]},
+  {"codigo": "34832", "letreiro": "7021-10", "sentido": "VOLTA", "nome": "Roberto Selmi Dei / Terminal Pirituba", "paradas": ["140015892", "140088210"]},
+  {"codigo": "25011", "letreiro": "8000-10", "sentido": "IDA", "nome": "Metro Ana Rosa / Terminal Lapa", "paradas": ["220014331", "220900112"]},
+  {"codigo": "25012", "letreiro": "8000-10", "sentido": "VOLTA", "nome": "Terminal Lapa / Metro Ana Rosa", "paradas": ["220900112", "220014331"]},
+  {"codigo": "17520", "letreiro": "675N-10", "sentido": "IDA", "nome": "Praca da Se / Terminal Sao Mateus", "paradas": ["330210045", "330880771"]},
+  {"codigo": "17521", "letreiro": "675N-10", "sentido": "VOLTA", "nome": "Terminal Sao Mateus / Praca da Se", "paradas": ["330880771", "330210045"]},
+  {"codigo": "40110", "letreiro": "917M-10", "sentido": "IDA", "nome": "Metro Tucuruvi", "paradas": ["510022640"]}
+]

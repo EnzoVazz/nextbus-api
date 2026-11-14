@@ -1,0 +1,9 @@
+[
+  {"codigo": "330210045", "nome": "Praca da Se", "lat": -23.55052, "lng": -46.63331},
+  {"codigo": "330880771", "nome": "Terminal Sao Mateus", "lat": -23.60940, "lng": -46.47830},
+  {"codigo": "220014331", "nome": "Metro Ana Rosa", "lat": -23.58150, "lng": -46.63870},
+  {"codigo": "220900112", "nome": "Terminal Lapa", "lat": -23.52140, "lng": -46.69950},
+  {"codigo": "140088210", "nome": "Terminal Pirituba", "lat": -23.48850, "lng": -46.72600},
+  {"codigo": "140015892", "nome": "Roberto Selmi Dei", "lat": -23.50200, "lng": -46.71000},
+  {"codigo": "510022640", "nome": "Metro Tucuruvi", "lat": -23.48010, "lng": -46.60340}
+]
