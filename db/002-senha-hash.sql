@@ -1,15 +1,6 @@
 -- ==============================================================================
--- NEXTBUS - coluna de senha da API
---
--- Rode este arquivo no SQL Developer depois de 001-tabelas-e-carga.sql.
--- No SQL Developer use F5 (Run Script).
--- O script das tabelas nao e alterado. Esta coluna fica a cargo da API,
--- como o comentario daquele script ja dizia.
---
--- Senha de teste dos usuarios da carga (id 1 a 5): 123456
--- Marina Costa (cidada) e Ricardo Nunes (gestor) entram com essa senha.
--- O valor gravado e o hash BCrypt, o mesmo que o Spring Security confere.
--- Usuarios criados pela API (id a partir de 100) nao sao alterados.
+-- NEXTBUS - coluna senha_hash da tabela USUARIO
+-- Hash BCrypt da senha de teste 123456 para os usuarios da carga (id menor que 100).
 -- ==============================================================================
 
 SET DEFINE OFF;

@@ -141,7 +141,6 @@ public class OlhoVivoCliente implements OlhoVivoConsulta {
     private boolean login() {
         try {
             String caminho = "/Login/Autenticar?token=" + codificar(token);
-            // Corpo vazio faz o HttpClient omitir Content-Length e a Olho Vivo responde 411.
             HttpResponse<String> resposta = enviar(pedido(uri(caminho))
                     .POST(HttpRequest.BodyPublishers.ofString(" "))
                     .build());

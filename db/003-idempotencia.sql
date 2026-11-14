@@ -1,9 +1,5 @@
 -- ==============================================================================
--- NEXTBUS - tabela da chave de idempotencia do POST /rotinas
---
--- A API tambem cria esta tabela ao subir, se ela ainda nao existir.
--- Rode com F5 no SQL Developer somente se a subida avisar que a tabela falta.
--- Nao altera USUARIO, ROTINA nem AVISO.
+-- NEXTBUS - tabela IDEMPOTENCIA, chave do POST /rotinas
 -- ==============================================================================
 
 BEGIN

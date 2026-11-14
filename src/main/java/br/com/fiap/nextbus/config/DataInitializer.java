@@ -27,7 +27,7 @@ public class DataInitializer implements CommandLineRunner {
             garantirSenha("ricardo.nunes@email.com");
         } catch (DataAccessException ex) {
             throw new IllegalStateException(
-                    "Não foi possível ler a tabela USUARIO. Rode o arquivo db/002-senha-hash.sql no SQL Developer, com F5, na conexão FIAP.",
+                    "Não foi possível ler a tabela USUARIO.",
                     ex);
         }
     }
@@ -40,7 +40,6 @@ public class DataInitializer implements CommandLineRunner {
         if (usuario.getSenhaHash() == null || usuario.getSenhaHash().isBlank()) {
             usuario.setSenhaHash(passwordEncoder.encode(SENHA_TESTE));
             usuarioRepository.save(usuario);
-            System.out.println("Senha de teste gravada para " + usuario.getEmail());
         }
     }
 }

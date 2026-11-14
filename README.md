@@ -6,7 +6,7 @@ O **NextBus** é a API **Spring Boot** da Global Solution. Ela acompanha a rotin
 
 A previsão e a posição vêm da **Olho Vivo**. O aviso anda por uma fila **RabbitMQ**. A frase da tela é escrita pelo **Spring AI**, com os dados já calculados. Se o modelo não responder, entra uma frase padrão com os mesmos campos.
 
-O projeto entrega a API REST consumida pelo aplicativo. O banco Oracle já existe: o Hibernate não cria nem altera as tabelas.
+O projeto entrega a API REST consumida pelo aplicativo. O Hibernate não mexe nas tabelas. Na primeira subida, a API cria as que faltam e a carga de teste, sem apagar o que já existe.
 
 ---
 
@@ -127,7 +127,7 @@ A Marina já tem ida às 07:15, linha `7021-10`, ponto Roberto Selmi Dei, e volt
 ### Pré-requisitos
 
 - JDK 17
-- Oracle da FIAP, com as tabelas do script `db/001-tabelas-e-carga.sql` já criadas
+- Oracle da FIAP. Na primeira subida a API cria `USUARIO`, `ROTINA`, `AVISO` e `IDEMPOTENCIA`, com a Marina, o Ricardo e a carga de teste, se ainda não existirem. Os scripts em `db/` são o mesmo modelo, para leitura
 - RabbitMQ em `localhost:5672`
 
 O RabbitMQ pode ser o serviço do Windows. O `docker compose` da pasta do projeto só sobe o broker, e o Docker não é obrigatório. Usuário e senha locais: `guest` / `guest`.
